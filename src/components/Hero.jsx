@@ -33,7 +33,7 @@ const Hero = () => {
       delay: 2,
       y: -50,
     });
-  });
+  }, []);
 
   return (
     <section className="w-full nav-height bg-black">
