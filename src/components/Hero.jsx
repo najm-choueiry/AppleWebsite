@@ -48,6 +48,7 @@ const Hero = () => {
             playsInline={true}
             key={videoSrc}
             className="pointer-events-none"
+            loop
           >
             <source src={videoSrc} type="video/mp4" />
           </video>

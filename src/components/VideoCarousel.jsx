@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { hightlightsSlides } from "../constants";
 import { pauseImg, playImg, replayImg } from "../utils";
+import gsap from "gsap";
 
 const VideoCarousel = () => {
   const videoRef = useRef([]);
@@ -133,7 +134,7 @@ const VideoCarousel = () => {
             onClick={
               isLastVideo
                 ? () => handleProcess("video-reset")
-                : !isPlaying()
+                : !isPlaying
                 ? handleProcess("play")
                 : () => handleProcess("pause")
             }
